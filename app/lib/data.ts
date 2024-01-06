@@ -191,7 +191,7 @@ export async function fetchFilteredCustomers(query: string) {
   try {
     const data = await sql<CustomersTableType>`
 		SELECT
-		  customers.id,
+      customers.id,
 		  customers.name,
 		  customers.email,
 		  customers.image_url,
